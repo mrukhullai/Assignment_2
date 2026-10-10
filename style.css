@@ -1,0 +1,98 @@
+/* Include padding and borders in declared dimensions to keep layout sizes predictable. */
+* {
+  box-sizing: border-box;
+}
+
+/* Keep the demos visually distinct while giving the page a small-screen-friendly gutter. */
+body{
+  padding: 10px 5px;
+  background-color: rgb(186, 238, 252);
+}
+
+/* Shared flex container and numbered box styling used by all six demonstrations. */
+.container {
+  padding: 1rem;
+  display: flex ;
+  border: 2px solid;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  width: 100px;
+  height: 80px;
+  border: 1px solid;
+  margin: 10px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-1{
+  background-color:brown ;
+  color: rgb(250, 247, 244)
+}
+
+.box-2{
+  background-color: lightblue ;
+}
+
+.box-3{
+  background-color: lightgreen ;
+}
+
+.box-4{
+  background-color:blueviolet ;
+}
+
+.box-5{
+  background-color:rgba(0, 102, 255, 0.884) ;
+}
+
+.box-6{
+  background-color: black;
+  color: white;
+}
+
+/* Demo 1: distribute the boxes across a single row with space between them. */
+.demo-1{
+  justify-content: space-between;
+}
+
+/* Demo 2: change the main axis to vertical so the boxes stack top to bottom. */
+.demo-2{
+  flex-direction: column;
+  height: 400px;
+}
+
+/* Demo 3: center the column on both axes; justify-content centers vertically here. */
+.demo-3{
+  flex-direction: column;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Demo 4: wrap boxes when they do not fit on one line, keeping a 1rem gap. */
+.demo-4{
+  flex-wrap:wrap;
+  gap: 1rem;
+  width: 30%;
+}
+
+/* Demo 5: align the wrapped lines with space between inside a tall container. */
+.demo-5{
+  flex-wrap:wrap;
+  gap: 1rem;
+  align-content: space-between;
+  height: 400px;
+  width: 30%;
+}
+
+/* Demo 6: reverse the row and align items to the cross-axis end (the bottom). */
+.demo-6{
+  flex-direction: row-reverse;
+  align-items:flex-end;
+  height: 400px;
+}

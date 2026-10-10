@@ -1,24 +1,29 @@
-# Assignment 2
+# Assignment 2: Responsive CSS Design with Flexbox
 
-Responsive CSS Design with Flexbox
+This assignment practices responsive design concepts and CSS Flexbox without a
+CSS framework. The current web page demonstrates six Flexbox layouts using the
+same set of six numbered, coloured boxes.
 
-This project contains the work for Assignment 2, focused on responsive web design principles and CSS Flexbox.
+## Project files
 
-## Included files
-- `index.html` – the web page structure for the assignment
-- `style.css` – handwritten CSS for responsive layout and Flexbox demos
-- `answers.md` – Part A concept answers and the required written explanations
+- `index.html` contains the labelled Flexbox demonstrations.
+- `style.css` contains the box-sizing reset, shared box styles, and demo-specific
+  Flexbox rules.
+- `answers.md` contains the written answers for Part A.
 
-## Overview
-The assignment covers:
-- responsive design concepts
-- mobile-first styling
-- flexible units such as `%`, `rem`, and `vw`
-- `box-sizing: border-box`
-- Flexbox layout and alignment
-- building a responsive page with media queries
+## Flexbox demonstrations
 
-## Notes
-- The page should work across mobile, tablet, and desktop sizes.
-- Layouts should be built using Flexbox and designed mobile-first.
-- No frameworks such as Bootstrap or Tailwind should be used.
+1. Boxes in a row with `justify-content: space-between`.
+2. Boxes stacked vertically with `flex-direction: column`.
+3. Boxes centred horizontally and vertically in a column layout.
+4. Boxes wrapping with a `1rem` gap.
+5. Wrapped boxes using `align-content: space-between` in a tall container.
+6. A reversed row aligned to the bottom using `align-items`.
+
+Open `index.html` in a browser to view the examples. The HTML headings label
+each example, and CSS comments explain the layout choices.
+
+## Assignment status
+
+Part A answers and Part B demonstrations are included. The separate responsive
+business page and debugging answer required by Part C have not yet been added.
